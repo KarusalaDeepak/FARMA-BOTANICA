@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Euphoria+Script&display=swap');
+
+body {
+  background-image: url("background-sky.jpg");
+  background-size: 100%;
+  padding: 20px;
+}
+
+.cloud {
+  animation: acrosspage 12s ease-in-out infinite;
+  top: 53em;
+}
+
+@keyframes acrosspage {
+  0% {
+    transform: translateX(-10em);
+  }
+  100% {
+    transform: translateX(80em);
+  }
+}
+
+.form-group{
+    width: 75%;
+    max-width: 300px;
+    height: 30px;
+    border: solid #000 1px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: orangered;
+    border-style: groove;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    padding: 7.5px 0px;
+}
+
+.btn {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  border-width: 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  border: #ddd solid;
+}
+
+.btn:hover {
+  color: #ddd;
+  background: red;
+}
+
+.color1{
+  color:crimson;
+}
+
+.color2{
+  color:rgb(231, 209, 12);
+}
+
+.color3{
+  color:green;
+}
+
+.color4{
+  color:blueviolet;
+}
+.displayCondition {
+  font-weight: bold;
+  display: none;
+  padding: 10px;
+  width: 10%;
+  height: 20vw;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  border: 3px solid purple;
+  font-family: 'Droid Serif', serif;
+  font-size: 1.2vw;
+  background-color: antiquewhite;
+  overflow: hidden;
+}
+
+#headerTitle {
+  padding: 20px;
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  font-weight:bolder;
+  font-size: 46px;
+  text-align: center;
+}
+
+#day0, #day1, #day2, #day3, #day4, #day5, #day6{
+  font-size: 1.5vw;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#high0, #high1, #high2, #high3, #high4, #high5, #high6 {
+  display: block;
+  font-size: 1.4vw;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+#inputLine {
+  text-align: center;
+  display: block;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+#instructions {
+  font-family: 'Arial';
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 1px;
+  text-align: center;
+}
+
+#low0, #low1, #low2, #low3, #low4, #low5, #low6 {
+  display: block;
+  font-size: 1.4vw;
+  margin: 0 auto;
+  padding-bottom: 2px;
+  text-align: center;
+}
+
+#setColumns {
+  display: block;
+  height: 22%;
+  margin: 0 auto;
+  padding-left: 10vw;
+}
+
+#weather_desc0, #weather_desc1, #weather_desc2, #weather_desc3, #weather_desc4, #weather_desc5, #weather_desc6 {
+  display: block;
+  font-size: 1vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#weather_img_icon0, #weather_img_icon1, #weather_img_icon2, #weather_img_icon3, #weather_img_icon4, #weather_img_icon5, #weather_img_icon6 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     110%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 )
+                url('http://i.stack.imgur.com/FhHRx.gif')
+                50% 50%
+                no-repeat;
+}
+
+body.loading {
+    overflow: hidden;
+}
+
+body.loading .modal {
+    display: block;
+}
+
